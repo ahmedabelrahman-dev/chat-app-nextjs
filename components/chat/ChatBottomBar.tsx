@@ -62,7 +62,7 @@ const ChatBottomBar = () => {
     sendMessage({
       content: message,
       messageType: 'text',
-      receiverId: selectedUser?.id!,
+      receiverId: selectedUser?.id ?? '',
     });
     setMessage('');
 
@@ -159,7 +159,7 @@ const ChatBottomBar = () => {
                 sendMessage({
                   content: imgUrl,
                   messageType: 'image',
-                  receiverId: selectedUser?.id!,
+                  receiverId: selectedUser?.id ?? '',
                 });
                 setImgUrl('');
               }}
@@ -234,7 +234,7 @@ const ChatBottomBar = () => {
                   sendMessage({
                     content: '👍',
                     messageType: 'text',
-                    receiverId: selectedUser?.id!,
+                    receiverId: selectedUser?.id ?? '',
                   });
                 }}
               />
