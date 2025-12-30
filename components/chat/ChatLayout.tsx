@@ -1,4 +1,5 @@
 'use client';
+//TODO: fix the layout
 import { useEffect, useState } from 'react';
 import {
   ResizableHandle,
